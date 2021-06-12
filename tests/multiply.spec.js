@@ -6,12 +6,12 @@ describe('Multiply', () => {
     expect(result).toBe(4);
   });
 
-  test('should multiply two floating point numbers correctly', () => {
-    const result = multiply(2.5, 3.5);
-    expect(result).toBe(8.75);
+  test('should multiply a positive and a negative integer correctly', () => {
+    const result = multiply(-4, 8);
+    expect(result).toBe(-32);
   });
 
-  test('should return 0 when function is called without arguments', () => {
+  test('should return 0 when function is called with any number and a zero', () => {
     const result = multiply(10, 0);
     expect(result).toBe(0);
   });
