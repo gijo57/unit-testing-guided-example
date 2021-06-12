@@ -6,7 +6,7 @@ describe('Multiply', () => {
     expect(result).toBe(4);
   });
 
-  test('should multiply a positive and a negative integer correctly', () => {
+  test('should return a negative integer when multiplying a positive and a negative integer', () => {
     const result = multiply(-4, 8);
     expect(result).toBeLessThan(0);
   });
